@@ -123,7 +123,9 @@ html {
 
   <div class="col-6 col-s-9">
     <h1>The City</h1>
-    <p>Kia ora hello and welcome to the video production group website here is where you can get all your information about the video production group</p>
+    <p>Are you passionate about storytelling through film? Whether you're an actor, actress, or part of the behind-the-scenes magic, [Your Video Production Group Name] is the place for you. We're more than just a production team; we're a thriving community of creatives dedicated to bringing unique stories to life.
+
+Join us to collaborate, learn, and grow alongside fellow artists. Whether you're just starting out or a seasoned pro, there's a role for you in our productions. Together, let's create something extraordinary!</p>
   </div>
 
   <div class="col-3 col-s-12">
@@ -135,14 +137,83 @@ html {
       <h2>How?</h2>
       <p>We strive to create an inclusive and supportive environment where everyone can share their ideas, gain hands-on experience, and produce exceptional cinematic experiences.</p>
     </div>
+    
+    
+    
   </div>
+  <div class="col-12">
+  <div class="col-4">
+  <h1>Pre-Production Callout</h1>
+    <p>
+
+Are you ready to shape the future of storytelling? We're looking for creative minds to join our pre-production team. Whether you're a scriptwriter, storyboard artist, casting director, or anyone with a vision, this is your chance to play a pivotal role in our next big project. Collaborate with like-minded creatives, develop groundbreaking ideas, and help us bring our stories to life. Your expertise could be the spark that ignites our next hit. Join us in the exciting journey of turning concepts into reality!</p>
+  </div>
+  <div class="col-4">
+  <h1>Production Callout</h1>
+    <p>
+
+Lights, camera, action! We're seeking talented and passionate individuals to join our production crew. Whether you're a director, cinematographer, sound engineer, or grip, we need your expertise to bring our projects to life. This is your opportunity to be part of a dynamic team, working on exciting and innovative productions. If you're ready to be on set, collaborate with other creatives, and make magic happen, we want you! Come be a vital part of the action and help us create something unforgettable.</p>
+  </div>
+  
+    <div class="col-4">
+    <h2>Messages</h2>
+  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdGGiV9LbDz50t6O3Nv5DCfKXQ9Ett3-yqC0aWQESlI1ypOWQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+  
+    <div class="col-12">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter name" name="entry.1261876333" id="entry.1261876333">
+    </div>
+    <div class="col-12">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter email" name="entry.744710745" id="entry.744710745">
+    </div>
+    <div class="col-12">
+      <label for="message">Messages:</label>
+      <textarea class="form-control" rows="12" col="12" id="comment" name="entry.1530950368" id="entry.1530950368"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </div>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+<!-- messages -->
+
+  </div>
+  
+  <div class="col-4">
+  <h1>Post-Production Callout</h1>
+    <p>
+
+The magic of filmmaking doesn't end when the cameras stop rolling—it’s just beginning. We're calling all editors, sound designers, VFX artists, colorists, and post-production wizards to join our team. Your skills are crucial in transforming raw footage into polished, captivating stories. If you're passionate about crafting the final product and adding the finishing touches that make a film shine, we want to hear from you. Join our post-production crew and help us create the cinematic masterpieces that audiences will remember!</p>
+  </div>
+  
+  <div class="col-4">
+  <h1>The City</h1>
+    <p>Kia ora hello and welcome to the video production group website here is where you can get all your information about the video production group</p>
+  </div>
+  
+  <div class="col-4">
+  <h1>Messages</h1>
+    <p>Send me a message or get in contact direct</p>
+    <a href="mailto:joash.osborne@gmail.com">Email COMMS</a>
+  </div>
+  
+  </div>
 
 <div class="footer">
   <p>Resize the browser window to see how the content respond to the resizing.</p>
 </div>
-
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
 </html>
 
 
